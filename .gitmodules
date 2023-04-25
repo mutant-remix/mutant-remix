@@ -1,0 +1,15 @@
+[submodule "orxporter"]
+	path = orxporter
+	url = https://gitlab.insrt.uk/revolt/mutant-remix/orxporter
+
+[submodule "assets"]
+	path = assets
+	url = https://github.com/mutant-remix/assets
+
+[submodule "builder"]
+	path = builder
+	url = https://github.com/mutant-remix/builder
+
+[submodule "coverage"]
+	path = coverage
+	url = https://github.com/mutant-remix/coverage
