@@ -20,7 +20,15 @@ git submodule update
 ### Script usage
 You will need [these prerequisites in order to use them](https://gitlab.insrt.uk/revolt/mutant-remix/orxporter#prerequisites).
 
-This repository has no warranty and has only been tested with Arch Linux. :)
+You also need to install the dependencies for `coverage`
+
+```
+cd coverage
+yarn
+cd ..
+```
+
+This repository has no warranty and has only been tested with Arch Linux. A docker version is in the works.
 
 - Calculate unicode coverage
     - Generate `out/test_json/mtnt_test.json`
