@@ -13,3 +13,7 @@
 [submodule "coverage"]
 	path = coverage
 	url = https://github.com/mutant-remix/coverage
+
+[submodule "font-builder"]
+	path = font-builder
+	url = https://github.com/mutant-remix/font-builder

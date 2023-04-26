@@ -6,7 +6,7 @@ Mutant Remix is not affiliated with [Mutant Standard](https://mutant.tech/). Thi
 
 ## License
 
-Everything directly in this repository is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/). Refer to separate licenses in the `assets`, `builder`, `coverage` and `orxporter` submodules for their respective licenses.
+Everything directly in this repository is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/). Refer to separate licenses in the `assets`, `builder`, `coverage`, `font-builder` and `orxporter` submodules for their respective licenses.
 
 ## Using Export Scripts
 
