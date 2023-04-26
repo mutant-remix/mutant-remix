@@ -1,7 +1,3 @@
-[submodule "orxporter"]
-	path = orxporter
-	url = https://gitlab.insrt.uk/revolt/mutant-remix/orxporter
-
 [submodule "assets"]
 	path = assets
 	url = https://github.com/mutant-remix/assets
@@ -17,3 +13,7 @@
 [submodule "font-builder"]
 	path = font-builder
 	url = https://github.com/mutant-remix/font-builder
+
+[submodule "orxporter"]
+	path = orxporter
+	url = https://github.com/mutant-remix/orxporter
