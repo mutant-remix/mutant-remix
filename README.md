@@ -17,19 +17,16 @@ git submodule init
 git submodule update
 ```
 
+### Prerequisites
+This repository has no warranty and has only been tested with Arch Linux. Windows users may need to use WSL/Cygwin or update the scripts to work with Windows.
+
+You will need:
+- [Orxporter prerequisites](https://github.com/mutant-remix/orxporter#prerequisites)
+- [Node.js](https://nodejs.org/en/)
+- `yarn`
+- `wget`
+
 ### Script usage
-You will need [these prerequisites in order to use them](https://gitlab.insrt.uk/revolt/mutant-remix/orxporter#prerequisites).
-
-You also need to install the dependencies for `coverage`
-
-```
-cd coverage
-yarn
-cd ..
-```
-
-This repository has no warranty and has only been tested with Arch Linux. A docker version is in the works.
-
 - Calculate unicode coverage
     - Generate `out/test_json/mtnt_test.json`
     - Generate `out/coverage/coverage.md`, `png` and `svg`
