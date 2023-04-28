@@ -2,8 +2,11 @@ name: Build and release Mutant Remix
 
 on:
   push:
-    branches:
-      - main
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+  workflow_dispatch:
 
 jobs:
   build-mutant-remix:
