@@ -1,4 +1,4 @@
-name: Built and release Mutant Remix
+name: Build and release Mutant Remix
 
 on:
   push:
