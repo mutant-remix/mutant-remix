@@ -51,8 +51,21 @@ jobs:
           crate: resvg
 
       # Build pack
+      - name: Restore build cache
+        id: cache-mutantremix-restore
+        uses: actions/cache/restore@v3
+        with:
+          path: cache
+          key: ${{ runner.os }}-mutantremix
+
       - name: Run build script
         run: ./out_final_full.sh
+
+      - name: Save build cache
+        uses: actions/cache/save@v3
+        with:
+          path: cache
+          key: ${{ steps.cache-mutantremix-restore.outputs.cache-primary-key }}
 
       # Upload build artifacts
       - name: Upload pack artifact
