@@ -19,46 +19,48 @@ jobs:
           submodules: 'recursive'
 
       # Install build dependencies
-      - uses: actions/setup-node@v3
-      - uses: actions/setup-python@v3
+      - name: Install node
+        uses: actions/setup-node@v3
+
+      - name: Install python
+        uses: actions/setup-python@v3
         with:
           cache: 'pip'
-      - uses: awalsh128/cache-apt-pkgs-action@latest
+
+      - name: Install apt dependencies
+        uses: awalsh128/cache-apt-pkgs-action@latest
         with:
-          # missing: oxypng, svgcleaner
           packages: resvg libimage-exiftool-perl webp libpng-dev libaom-dev
           version: 1.0
+
       - name: Install python dependencies
         run: pip install -r orxporter/requirements.txt
+
+      - name: Install oxipng
+        uses: baptiste0928/cargo-install@v2
+        with:
+          crate: oxipng
+
+      - name: Install svgcleaner
+        uses: baptiste0928/cargo-install@v2
+        with:
+          crate: svgcleaner
 
       # Build pack
       - name: Run build script
         run: ./out_final_full.sh
 
       # Upload build artifacts
-      - name: Pack final-pkg artifact
-        run: tar -cvzf out/final-pkg.tar.gz out/final-pkg
-
-      - name: Upload final-pkg.tar.gz
+      - name: Upload pack artifact
         uses: actions/upload-artifact@v3
         with:
           name: final-pkg
-          path: out/final-pkg.tar.gz
+          path: |
+            out/final-pkg/mtnt_*.tar.gz
+            out/final-pkg/mtnt_*.json
 
-      - name: Upload coverage.md
+      - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
         with:
-          name: coverage.md
-          path: out/coverage/coverage.md
-
-      - name: Upload coverage.json
-        uses: actions/upload-artifact@v3
-        with:
-          name: coverage.json
-          path: out/coverage/coverage.json
-
-      - name: Upload coverage.svg
-        uses: actions/upload-artifact@v3
-        with:
-          name: coverage.svg
-          path: out/coverage/coverage.svg
+          name: coverage
+          path: out/coverage/coverage.*
