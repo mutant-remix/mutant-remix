@@ -28,7 +28,7 @@ jobs:
           cache: 'pip'
 
       - name: Install apt dependencies
-        uses: Eeems-Org/apt-cache-action
+        uses: Eeems-Org/apt-cache-action@v1
         with:
           packages: resvg libimage-exiftool-perl webp libpng-dev libaom-dev
 
