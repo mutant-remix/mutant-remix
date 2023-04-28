@@ -28,10 +28,9 @@ jobs:
           cache: 'pip'
 
       - name: Install apt dependencies
-        uses: awalsh128/cache-apt-pkgs-action@latest
+        uses: Eeems-Org/apt-cache-action@latest
         with:
           packages: resvg libimage-exiftool-perl webp libpng-dev libaom-dev
-          version: 1.0
 
       - name: Install python dependencies
         run: pip install -r orxporter/requirements.txt
