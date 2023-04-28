@@ -30,7 +30,7 @@ jobs:
       - name: Install apt dependencies
         uses: Eeems-Org/apt-cache-action@v1
         with:
-          packages: resvg libimage-exiftool-perl webp libpng-dev libaom-dev
+          packages: libimage-exiftool-perl webp libpng-dev libaom-dev
 
       - name: Install python dependencies
         run: pip install -r orxporter/requirements.txt
@@ -44,6 +44,11 @@ jobs:
         uses: baptiste0928/cargo-install@v2
         with:
           crate: svgcleaner
+
+      - name: Install resvg
+        uses: baptiste0928/cargo-install@v2
+        with:
+          crate: resvg
 
       # Build pack
       - name: Run build script
