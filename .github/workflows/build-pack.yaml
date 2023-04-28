@@ -6,53 +6,53 @@ on:
       - main
 
 jobs:
-  build:
+  build-mutant-remix:
     runs-on: ubuntu-latest
 
     steps:
-      uses: actions/checkout@v3
-      uses: actions/setup-node@v3
-      uses: actions/setup-python@v3
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+      - uses: actions/setup-python@v3
 
-    - name: Install build dependencies
-      run: sudo apt-get update && sudo apt-get install \
-        resvg \
-        exiftool \
-        webp \
-        libpng-dev \ # flif
-        libaom-dev -y # go-avif
-        # svgcleaner
-        # oxipng
+      - name: Install build dependencies
+        run: sudo apt-get update && sudo apt-get install \
+          resvg \
+          exiftool \
+          webp \
+          libpng-dev \ # flif
+          libaom-dev -y # go-avif
+          # svgcleaner
+          # oxipng
 
-    - name: Install python dependencies
-      run: pip install -r orxporter/requirements.txt
+      - name: Install python dependencies
+        run: pip install -r orxporter/requirements.txt
 
-    - name: Run script
-      run: ./out_final_full.sh
+      - name: Run script
+        run: ./out_final_full.sh
 
-    - name: Pack final-pkg artifact
-      run: tar -cvzf out/final-pkg.tar.gz out/final-pkg
+      - name: Pack final-pkg artifact
+        run: tar -cvzf out/final-pkg.tar.gz out/final-pkg
 
-    - name: Upload final-pkg.tar.gz
-      uses: actions/upload-artifact@v3
-      with:
-        name: final-pkg
-        path: out/final-pkg.tar.gz
+      - name: Upload final-pkg.tar.gz
+        uses: actions/upload-artifact@v3
+        with:
+          name: final-pkg
+          path: out/final-pkg.tar.gz
 
-    - name: Upload coverage.md
-      uses: actions/upload-artifact@v3
-      with:
-        name: coverage.md
-        path: out/coverage/coverage.md
+      - name: Upload coverage.md
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage.md
+          path: out/coverage/coverage.md
 
-    - name: Upload coverage.json
-      uses: actions/upload-artifact@v3
-      with:
-        name: coverage.json
-        path: out/coverage/coverage.json
+      - name: Upload coverage.json
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage.json
+          path: out/coverage/coverage.json
 
-    - name: Upload coverage.svg
-      uses: actions/upload-artifact@v3
-      with:
-        name: coverage.svg
-        path: out/coverage/coverage.svg
+      - name: Upload coverage.svg
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage.svg
+          path: out/coverage/coverage.svg
