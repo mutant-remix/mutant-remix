@@ -6,9 +6,9 @@
 	path = coverage
 	url = https://github.com/mutant-remix/coverage
 
-[submodule "font-builder"]
-	path = font-builder
-	url = https://github.com/mutant-remix/font-builder
+[submodule "forc"]
+	path = forc
+	url = https://github.com/mutant-remix/forc
 
 [submodule "orxporter"]
 	path = orxporter
