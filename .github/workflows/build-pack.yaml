@@ -98,7 +98,7 @@ jobs:
           git config --global user.name "[CI] Mutant Remix"
           git config --global user.email "noreply@mutant.revolt.chat"
           git init
-          git remote add origin https://${{ secrets.REPO_TOKEN }}@github.com/mutant-remix/coverage-report
+          git remote add origin https://${{ secrets.COVERAGE_REPORT_PAT }}@github.com/mutant-remix/coverage-report
 
       - name: Commit and push coverage report
         run: |
