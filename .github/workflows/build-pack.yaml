@@ -89,7 +89,6 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: coverage
-          path: out/coverage
 
       - name: Initialise coverage-report repository
         run: |
