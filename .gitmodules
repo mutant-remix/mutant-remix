@@ -2,10 +2,6 @@
 	path = assets
 	url = https://github.com/mutant-remix/assets
 
-[submodule "builder"]
-	path = builder
-	url = https://github.com/mutant-remix/builder
-
 [submodule "coverage"]
 	path = coverage
 	url = https://github.com/mutant-remix/coverage
