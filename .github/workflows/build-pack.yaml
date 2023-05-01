@@ -86,13 +86,14 @@ jobs:
 
     steps:
       - name: Download coverage artifact
+        id: download-artifact
         uses: actions/download-artifact@v3
         with:
           name: coverage
 
       - name: Initialise coverage-report repository
         run: |
-          mv coverage coverage-report
+          mv ${{ steps.download-artifact.outputs.path }} coverage-report
           cd coverage-report
           git config --global user.name "[CI] Mutant Remix"
           git config --global user.email "noreply@mutant.revolt.chat"
