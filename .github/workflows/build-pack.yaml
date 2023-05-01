@@ -98,24 +98,20 @@ jobs:
           name: coverage
           path: out/coverage
 
-      - name: Authenticate with the repository
-        uses: actions/checkout@v2
-        with:
-          repository: mutant-remix/coverage-report
-          token: ${{ secrets.REPO_TOKEN }}
-          path: coverage-report
-
       - name: Initialise coverage-report repository
         run: |
           git config --global user.name "[CI] Mutant Remix"
           git config --global user.email "noreply@mutant.revolt.chat"
           git init
-          git remote add origin https://github.com/mutant-remix/coverage-report
+          git remote add origin https://${{ secrets.REPO_TOKEN }}@github.com/mutant-remix/coverage-report
 
       - name: Copy coverage report
         run: |
-          cp -r out/coverage coverage-report
+          cp -r out/coverage/* coverage-report
           cd coverage-report
+
+      - name: Commit and push coverage report
+        run: |
           git add .
           git commit -m "[CI] Upload latest coverage"
           git push -f origin master
