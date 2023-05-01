@@ -101,8 +101,8 @@ jobs:
       - name: Clear coverage-report repository
         run: |
           cd coverage-report
-          git rm -rf .
-          git commit -m "[CI] Clear coverage report"
+          git reset --hard $(git rev-list --max-parents=0 HEAD)
+          git clean -fdx
 
       - name: Download coverage artifact
         id: download-artifact
