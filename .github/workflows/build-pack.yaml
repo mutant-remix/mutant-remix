@@ -27,13 +27,15 @@ jobs:
         with:
           cache: 'pip'
 
+      - name: Install python dependencies
+        run: |
+          pip install -r orxporter/requirements.txt
+          pip install -r forc/requirements.txt
+
       - name: Install apt dependencies
         uses: Eeems-Org/apt-cache-action@v1
         with:
           packages: libimage-exiftool-perl webp libpng-dev libaom-dev
-
-      - name: Install python dependencies
-        run: pip install -r orxporter/requirements.txt
 
       - name: Install oxipng
         uses: baptiste0928/cargo-install@v2
@@ -56,7 +58,7 @@ jobs:
         uses: actions/cache/restore@v3
         with:
           path: cache
-          key: ${{ runner.os }}-mutantremix
+          key: mutantremix
 
       - name: Run build script
         run: ./out_final_full.sh
