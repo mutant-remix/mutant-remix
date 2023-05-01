@@ -92,6 +92,11 @@ jobs:
           path: coverage-report
           token: ${{ secrets.COVERAGE_REPORT_PAT }}
 
+      - name: Configure git
+        run: |
+          git config user.name "Mutant Remix CI"
+          git config user.email "noreply@example.com"
+
       - name: Clear coverage-report repository
         run: |
           cd coverage-report
