@@ -58,7 +58,7 @@ jobs:
         uses: actions/cache/restore@v3
         with:
           path: cache
-          key: mutantremix
+          key: mutantremix-${{ github.sha }}
 
       - name: Run build script
         run: ./out_final_full.sh
@@ -83,3 +83,40 @@ jobs:
         with:
           name: coverage
           path: out/coverage/coverage.*
+
+  publish-coverage:
+    needs: build-mutant-remix
+    runs-on: ubuntu-latest
+
+    # Only run this job on push, not on PR or manual trigger
+    if: github.event_name == 'push'
+
+    steps:
+      - name: Download coverage artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: coverage
+          path: out/coverage
+
+      - name: Authenticate with the repository
+        uses: actions/checkout@v2
+        with:
+          repository: mutant-remix/coverage-report
+          token: ${{ secrets.REPO_TOKEN }}
+          path: coverage-report
+
+      - name: Initialise coverage-report repository
+        run: |
+          git config --global user.name "[CI] Mutant Remix"
+          git config --global user.email "noreply@mutant.revolt.chat"
+          git init
+          git remote add origin https://github.com/mutant-remix/coverage-report
+
+      - name: Copy coverage report
+        run: |
+          cp -r out/coverage coverage-report
+          cd coverage-report
+          git add .
+          git commit -m "[CI] Upload latest coverage"
+          git push -f origin master
+
