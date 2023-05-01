@@ -94,6 +94,7 @@ jobs:
 
       - name: Configure git
         run: |
+          cd coverage-report
           git config user.name "Mutant Remix CI"
           git config user.email "noreply@example.com"
 
