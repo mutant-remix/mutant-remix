@@ -109,10 +109,11 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: unicode-coverage
-          path: unicode-coverage
+          path: unicode-coverage-artifact
 
       - name: Commit and push unicode coverage report
         run: |
+          mv unicode-coverage-artifact/coverage.* unicode-coverage/
           cd unicode-coverage
           git add .
           git commit -m "[CI] Upload latest coverage"
@@ -139,5 +140,6 @@ jobs:
           files: |
             final-pkg/mtnt_*.tar.gz
             final-pkg/mtnt_*.json
-          tag_name: mutantremix-${{ github.sha }}-${{ github.run_number }}
+          tag_name: v${{ github.run_number }}
+          name: Mutant Remix v${{ github.run_number }}
           draft: true
