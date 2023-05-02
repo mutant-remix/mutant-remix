@@ -71,11 +71,11 @@ jobs:
             out/final-pkg/mtnt_*.tar.gz
             out/final-pkg/mtnt_*.json
 
-      - name: Upload coverage artifact
+      - name: Upload unicode coverage artifact
         uses: actions/upload-artifact@v3
         with:
-          name: coverage
-          path: out/coverage/coverage.*
+          name: unicode-coverage
+          path: out/unicode-coverage/coverage.*
 
   publish-coverage:
     needs: build-mutant-remix
@@ -85,22 +85,22 @@ jobs:
     if: github.event_name == 'push'
 
     steps:
-      - name: Checkout coverage-report repository
+      - name: Checkout unicode-coverage repository
         uses: actions/checkout@v3
         with:
-          repository: mutant-remix/coverage-report
-          path: coverage-report
+          repository: mutant-remix/unicode-coverage
+          path: unicode-coverage
           token: ${{ secrets.COVERAGE_REPORT_PAT }}
 
       - name: Configure git
         run: |
-          cd coverage-report
+          cd unicode-coverage
           git config user.name "Mutant Remix CI"
           git config user.email "noreply@example.com"
 
-      - name: Clear coverage-report repository
+      - name: Clear unicode-coverage repository
         run: |
-          cd coverage-report
+          cd unicode-coverage
           git reset --hard $(git rev-list --max-parents=0 HEAD)
           git clean -fdx
 
@@ -108,12 +108,12 @@ jobs:
         id: download-artifact
         uses: actions/download-artifact@v3
         with:
-          name: coverage
-          path: coverage-report
+          name: unicode-coverage
+          path: unicode-coverage
 
-      - name: Commit and push coverage report
+      - name: Commit and push unicode coverage report
         run: |
-          cd coverage-report
+          cd unicode-coverage
           git add .
           git commit -m "[CI] Upload latest coverage"
           git push -f origin master

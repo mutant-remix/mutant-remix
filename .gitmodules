@@ -2,9 +2,9 @@
 	path = assets
 	url = https://github.com/mutant-remix/assets
 
-[submodule "coverage"]
-	path = coverage
-	url = https://github.com/mutant-remix/coverage
+[submodule "coverage-calculator"]
+	path = coverage-calculator
+	url = https://github.com/mutant-remix/coverage-calculator
 
 [submodule "forc"]
 	path = forc
