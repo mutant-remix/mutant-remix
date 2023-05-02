@@ -101,7 +101,7 @@ jobs:
       - name: Clear unicode-coverage repository
         run: |
           cd unicode-coverage
-          git reset --hard $(git rev-list --max-parents=0 HEAD)
+          git reset --hard 74b0f07
           git clean -fdx
 
       - name: Download coverage artifact
