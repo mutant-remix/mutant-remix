@@ -117,3 +117,27 @@ jobs:
           git add .
           git commit -m "[CI] Upload latest coverage"
           git push -f origin master
+
+  publish-draft-release:
+    needs: build-mutant-remix
+    runs-on: ubuntu-latest
+
+    # Only run this job on manual trigger
+    if: github.event_name == 'workflow_dispatch'
+
+    steps:
+      - name: Download pack artifact
+        id: download-artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: final-pkg
+          path: final-pkg
+
+      - name: Create draft release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            final-pkg/mtnt_*.tar.gz
+            final-pkg/mtnt_*.json
+          tag_name: mutantremix-${{ github.sha }}-${{ github.run_number }}
+          draft: true
