@@ -91,6 +91,7 @@ jobs:
           repository: mutant-remix/unicode-coverage
           path: unicode-coverage
           token: ${{ secrets.COVERAGE_REPORT_PAT }}
+          fetch-depth: '0'
 
       - name: Configure git
         run: |
