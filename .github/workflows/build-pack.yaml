@@ -86,11 +86,11 @@ jobs:
 
     steps:
       - name: Clone unicode-coverage repository
-        uses: GuillaumeFalourd/clone-github-repo-action@v2
+        uses: actions/checkout@v2
         with:
-          owner: mutant-remix
-          repository: unicode-coverage
-          access-token: ${{ secrets.COVERAGE_REPORT_PAT }}
+          repository: mutant-remix/unicode-coverage
+          path: unicode-coverage
+          token: ${{ secrets.COVERAGE_REPORT_PAT }}
 
       - name: Configure git
         run: |
@@ -101,8 +101,8 @@ jobs:
       - name: Clear unicode-coverage repository
         run: |
           cd unicode-coverage
-          git reset --hard ROOT
-          rm -rf *
+          git reset --hard 303f8912610638be6abc81bc64612af0c815698a
+          rm coverage.*
 
       - name: Download coverage artifact
         id: download-artifact
