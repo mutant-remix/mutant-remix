@@ -85,12 +85,12 @@ jobs:
     if: github.event_name == 'push'
 
     steps:
-      - name: Checkout unicode-coverage repository
-        uses: actions/checkout@v3
+      - name: Clone unicode-coverage repository
+        uses: GuillaumeFalourd/clone-github-repo-action@v2
         with:
-          repository: mutant-remix/unicode-coverage
-          path: unicode-coverage
-          token: ${{ secrets.COVERAGE_REPORT_PAT }}
+          owner: mutant-remix
+          repository: unicode-coverage
+          access-token: ${{ secrets.COVERAGE_REPORT_PAT }}
 
       - name: Configure git
         run: |
