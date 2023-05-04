@@ -102,7 +102,6 @@ jobs:
         run: |
           cd unicode-coverage
           git reset --hard 303f8912610638be6abc81bc64612af0c815698a
-          rm coverage.*
 
       - name: Download coverage artifact
         id: download-artifact
