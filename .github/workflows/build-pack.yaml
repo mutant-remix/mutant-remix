@@ -110,7 +110,7 @@ jobs:
           name: unicode-coverage
           path: unicode-coverage
 
-      - name: Commit and push unicode coverage report
+      - name: Commit and push unicode coverage
         run: |
           cd unicode-coverage
           git add .
