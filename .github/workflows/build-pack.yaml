@@ -101,22 +101,21 @@ jobs:
       - name: Clear unicode-coverage repository
         run: |
           cd unicode-coverage
-          git reset --hard 74b0f0717e4d9bb01998298c0fe40dac46c1761a
-          git clean -fdx
+          git reset --hard ROOT
+          rm -rf *
 
       - name: Download coverage artifact
         id: download-artifact
         uses: actions/download-artifact@v3
         with:
           name: unicode-coverage
-          path: unicode-coverage-artifact
+          path: unicode-coverage
 
       - name: Commit and push unicode coverage report
         run: |
-          mv unicode-coverage-artifact/coverage.* unicode-coverage/
           cd unicode-coverage
           git add .
-          git commit -m "[CI] Upload latest coverage"
+          git commit -m "[CI] Upload latest coverage (${{ github.run_number }})"
           git push -f origin master
 
   publish-draft-release:
