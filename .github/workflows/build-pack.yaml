@@ -60,7 +60,10 @@ jobs:
           key: mutantremix
 
       - name: Run build script
-        run: ./out_final_full.sh
+        run: |
+          echo "version = \"v${{ github.run_number }}\"" > config.sh
+          echo "threads = 2" >> config.sh
+          ./out_final_full.sh
 
       # Upload build artifacts
       - name: Upload pack artifact
@@ -133,6 +136,14 @@ jobs:
           name: final-pkg
           path: final-pkg
 
+      - name: Generate release notes
+        id: release-notes
+        run: |
+          wget https://raw.githubusercontent.com/mutant-remix/mutant-remix/master/.github/release_notes/base.md
+          sed -i "s/{{ version }}/${{ github.run_number }}/g" base.md
+          # return output
+          echo "::set-output name=release_notes::$(cat base.md)"
+
       - name: Create draft release
         uses: softprops/action-gh-release@v1
         with:
@@ -142,3 +153,4 @@ jobs:
           tag_name: v${{ github.run_number }}
           name: Mutant Remix v${{ github.run_number }}
           draft: true
+          body: ${{ steps.release-notes.outputs.release_notes }}
