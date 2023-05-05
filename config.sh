@@ -1,3 +1,3 @@
 #!/bin/bash
-export version=1.0
+export version=0
 export threads=12

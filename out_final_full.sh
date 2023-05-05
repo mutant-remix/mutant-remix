@@ -21,10 +21,10 @@ echo "creating images..."
 echo "compiling package folders..."
 
 mkdir -p out/final-pkg &&
-./orxporter/orxport.py -m assets/manifest/out.orx -j out/final-pkg/mtnt_${version}_data.json
+./orxporter/orxport.py -m assets/manifest/out.orx -j out/final-pkg/mtnt_v${version}_data.json
 
 function make_pkg {
-    out_folder="out/final-pkg/mtnt_${version}_${2}"
+    out_folder="out/final-pkg/mtnt_v${version}_${2}"
 
     cp -R texts out/final-pkg &&
     mv out/final-pkg/texts "$out_folder" &&

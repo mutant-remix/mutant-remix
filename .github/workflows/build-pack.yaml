@@ -61,8 +61,8 @@ jobs:
 
       - name: Run build script
         run: |
-          echo "version = \"v${{ github.run_number }}\"" > config.sh
-          echo "threads = 2" >> config.sh
+          echo "version=${{ github.run_number }}" > config.sh
+          echo "threads=2" >> config.sh
           ./out_final_full.sh
 
       # Upload build artifacts
