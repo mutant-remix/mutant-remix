@@ -141,8 +141,11 @@ jobs:
         run: |
           wget https://raw.githubusercontent.com/mutant-remix/mutant-remix/master/.github/release_notes/base.md
           sed -i "s/{{ version }}/${{ github.run_number }}/g" base.md
-          # return output
-          echo "::set-output name=release_notes::$(cat base.md)"
+
+          EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
+          echo "release_notes<<$EOF" >> "$GITHUB_ENV"
+          cat base.md >> "$GITHUB_ENV"
+          echo "$EOF" >> "$GITHUB_ENV"
 
       - name: Create draft release
         uses: softprops/action-gh-release@v1
