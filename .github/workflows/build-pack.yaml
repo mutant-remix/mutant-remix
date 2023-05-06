@@ -143,9 +143,9 @@ jobs:
           sed -i "s/{{ version }}/${{ github.run_number }}/g" base.md
 
           EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
-          echo "release_notes<<$EOF" >> "$GITHUB_ENV"
-          cat base.md >> "$GITHUB_ENV"
-          echo "$EOF" >> "$GITHUB_ENV"
+          echo "release_notes<<$EOF" >> "$GITHUB_OUTPUT"
+          cat base.md >> "$GITHUB_OUTPUT"
+          echo "$EOF" >> "$GITHUB_OUTPUT"
 
       - name: Create draft release
         uses: softprops/action-gh-release@v1
