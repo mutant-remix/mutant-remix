@@ -26,7 +26,7 @@ mkdir -p out/final-pkg &&
 function make_pkg {
     out_folder="out/final-pkg/mtnt_v${version}_${2}"
 
-    cp -R texts out/final-pkg &&
+    cp -R assets/texts out/final-pkg &&
     mv out/final-pkg/texts "$out_folder" &&
     mv "out/final/${1}" "$out_folder/emoji"
 
@@ -38,7 +38,7 @@ function make_pkg_font {
     file_name="${1}"
     out_folder="out/final-pkg/mtnt_${version}_${2}"
 
-    cp -R texts out/final-pkg &&
+    cp -R assets/texts out/final-pkg &&
     mv out/final-pkg/texts "$out_folder" &&
     mkdir -p "${out_folder}/font" &&
     mv "out/final/font/${1}" "${out_folder}/font/${file_name}"
