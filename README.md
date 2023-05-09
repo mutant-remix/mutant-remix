@@ -6,15 +6,19 @@ This repository contains all of the files required to build a custom Mutant Remi
 
 Mutant Remix is not affiliated with [Mutant Standard](https://mutant.tech/). This is a transformation of the original Mutant Standard emoji pack, created by nizune for [Revolt](https://revolt.chat/).
 
+## Download
+You can download the latest release of Mutant Remix from the [releases page](https://github.com/mutant-remix/mutant-remix/releases)
+
+Alternatively, you can [build it yourself](#building)
+
 ## Contributing
 If you would like to contribute to Mutant Remix, please read the [CONTRIBUTING guide](./CONTRIBUTING.md).
 
 You can see the full list of contributors in [CONTRIBUTORS](./CONTRIBUTORS.md).
 
+## Building
 
-## Using Export Scripts
-
-To export Mutant Remix, clone this repository recursively or otherwise run:
+To build Mutant Remix, clone this repository recursively or otherwise run:
 
 ```bash
 git submodule init
