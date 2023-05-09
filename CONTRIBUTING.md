@@ -3,7 +3,7 @@
 </a>
 
 # Contributing
-This is a comprehensive guide on how to contribute to Mutant Remix and help us achieve full unicode coverage. Mutant Remix welcomes contributions from everyone.
+This is a comprehensive guide on how to contribute to Mutant Remix and help us achieve full unicode coverage. Mutant Remix welcomes contributions from everyone. Potential contributors are encouraged to read this guide **in full**.
 
 <a href="https://github.com/mutant-remix/unicode-coverage/blob/master/coverage.md">
     <img src="https://raw.githubusercontent.com/mutant-remix/unicode-coverage/master/coverage.png" style="width: 50%"></img>
