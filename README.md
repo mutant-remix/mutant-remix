@@ -31,20 +31,9 @@ git clone --recursive https://github.com/mutant-remix/mutant-remix
 
 > If you did not clone recursively, you can run `git submodule update --init --recursive` to fetch the submodules.
 
-This repository has no warranty and has only been tested with Arch Linux. If you are using a different distribution (or Windows), you may use a [Docker](#docker) container and/or [WSL](https://learn.microsoft.com/en-us/windows/wsl/install). If you are confused, [join our communities](#communities) and ask for help.
-
-### Docker
-If you are not running Arch Linux, you can use a [Docker](https://www.docker.com/) container to build Mutant Remix. This is the recommended way to build Mutant Remix on Windows (or other Linux distributions).
-
-```bash
-cd mutant-remix
-docker run -it --rm -v ./:/mutant-remix archlinux:latest /bin/bash
-cd /mutant-remix
-```
-
-Then, follow the [dependencies](#dependencies) instructions.
-
 ### Dependencies
+This repository has no warranty and has only been tested with Arch Linux. If you are using a different distribution (or Windows), check out the [Docker](#docker) section.
+
 You will need:
 - [Orxporter prerequisites](https://github.com/mutant-remix/orxporter#prerequisites)
 - [Node.js](https://nodejs.org/en/) + `yarn`
@@ -63,6 +52,15 @@ cd coverage-calculator
 yarn install
 
 cd ..
+```
+
+### Docker
+If you are not running Arch Linux, you can use a [Docker](https://www.docker.com/) container to build Mutant Remix. This is the recommended way to build Mutant Remix on Windows (or other Linux distributions).
+
+```bash
+cd mutant-remix
+docker run -it --rm -v ./:/mutant-remix archlinux:latest /bin/bash
+cd /mutant-remix
 ```
 
 ### Basic usage
