@@ -34,10 +34,10 @@ git clone --recursive https://github.com/mutant-remix/mutant-remix
 This repository has no warranty and has only been tested with Arch Linux. If you are using a different distribution (or Windows), you may use a [Docker](#docker) container or [WSL](https://learn.microsoft.com/en-us/windows/wsl/install). If you are confused, [join our communities](#communities) and ask for help.
 
 ### Docker
-If you are not running Arch Linux, you can use a Docker container to build Mutant Remix. This is the recommended way to build Mutant Remix on Windows (or other Linux distributions).
+If you are not running Arch Linux, you can use a [Docker](https://www.docker.com/) container to build Mutant Remix. This is the recommended way to build Mutant Remix on Windows (or other Linux distributions).
 
 ```bash
-docker run -it --rm archlinux:latest bash -v ./:/mutant-remix
+docker run -it --rm -v ./:/mutant-remix archlinux:latest /bin/bash
 ```
 
 Then, follow the [dependencies](#dependencies) instructions.
