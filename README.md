@@ -16,48 +16,74 @@ If you would like to contribute to Mutant Remix, please read the [CONTRIBUTING g
 
 You can see the full list of contributors in [CONTRIBUTORS](./CONTRIBUTORS.md).
 
-## Building
+## Communities
+- On Discord https://discord.gg/SkM2XppTrR
+- On [Revolt](https://revolt.chat) https://rvlt.gg/kcTDntf1
 
-To build Mutant Remix, clone this repository recursively or otherwise run:
+## Building
+> This guide assumes general familiarity with git and the command line. If you are not familiar with these, you should [join the communities](#communities) listed above and ask for help.
+
+To build Mutant Remix, clone this repository recursively.
 
 ```bash
-git submodule init
-git submodule update
+git clone --recursive https://github.com/mutant-remix/mutant-remix
 ```
 
-### Prerequisites
-This repository has no warranty and has only been tested with Arch Linux. Windows users may need to use WSL and users of other distributions may need to use Docker.
+> If you did not clone recursively, you can run `git submodule update --init --recursive` to fetch the submodules.
 
-Check out the [contributing guide](./CONTRIBUTING.md) for a more comprehensive explanation.
+This repository has no warranty and has only been tested with Arch Linux. If you are using a different distribution (or Windows), you may use a [Docker](#docker) container or [WSL](https://learn.microsoft.com/en-us/windows/wsl/install). If you are confused, [join our communities](#communities) and ask for help.
 
+### Docker
+If you are not running Arch Linux, you can use a Docker container to build Mutant Remix. This is the recommended way to build Mutant Remix on Windows (or other Linux distributions).
+
+```bash
+docker run -it --rm archlinux:latest bash -v ./:/mutant-remix
+```
+
+Then, follow the [dependencies](#dependencies) instructions.
+
+### Dependencies
 You will need:
 - [Orxporter prerequisites](https://github.com/mutant-remix/orxporter#prerequisites)
-- [Node.js](https://nodejs.org/en/)
-- `yarn`
+- [Node.js](https://nodejs.org/en/) + `yarn`
 - `wget`
 
-### Script usage
-- Calculate unicode coverage
-    - Generate `out/test_json/mtnt_test.json`
-    - Generate `out/coverage/coverage.md`, `json`, `png` and `svg`
-```
-sh out_coverage.sh
+```bash
+sudo pacman -S --needed \
+    base-devel wget \ # you likely have this installed already
+    python python-pip \ # for running orxporter
+    nodejs yarn \ # for running coverage-calculator
+    oxipng perl-image-exiftool svgcleaner libwebp # orxporter dependencies
+
+pip install -r ./orxporter/requirements.txt
+
+cd coverage-calculator
+yarn install
+
+cd ..
 ```
 
-- Short tests instead of building the full pack every time
+### Basic usage
+The first-time build is going to take 3-15 minutes (depending on your CPU). Subsequent builds will be several times faster, as only the changed files will be rebuilt.
+```bash
+sh out_final_full.sh
 ```
-sh out_test_svg.sh # ideal for development
+
+If everything worked, you will find the built pack in `./out/final-pkg`
+
+Note that **you do not need to build the full pack every time**. A script more suited for development is `./out_test_svg.sh`, which is much faster.
+```bash
+sh out_test_svg.sh
+```
+
+### Other scritps
+```bash
+sh out_coverage.sh
 sh out_test_png.sh
 sh out_final_basic.sh
 sh out_web_content_json.sh
-```
-
-- Build the full pack
-```
-sh out_final_full.sh
 sh out_web_content.sh
 ```
 
 ## License
-
 Everything directly in this repository is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/). Refer to separate licenses in the `assets`, `coverag-calculator`, `forc` and `orxporter` submodules for their respective licenses.
