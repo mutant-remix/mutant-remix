@@ -25,9 +25,7 @@ We encourage you to join our communities to discuss the changes you want to make
 - On [Revolt](https://revolt.chat) https://rvlt.gg/kcTDntf1
 
 ## Setting up the workspace
-**This is not necessary** for (code-wise) simple contributions such as adding new emojis. You can just open a pull request with your changes and CI will automatically build the pack for you to check for errors.
-
-> This guide assumes general familiarity with git and the command line. If you are not familiar with these, you should [join the communities](#communities) listed above and ask for help.
+This guide assumes general familiarity with git and the command line. If you are not familiar with these, you should [join the communities](#communities) listed above and ask for help.
 
 ### Basic setup
 This section only covers the basic setup required to add emojis to the pack and open a pull request. If you want to be able to build the entire pack locally, see the [full setup section](#full-setup).
@@ -42,7 +40,7 @@ cd assets
 Continue with the [adding content](#adding-content) section.
 
 ### Full setup
-**You may not need to do this.** If you just want to add emojis to the pack, see the [basic setup section](#basic-setup).
+**You may not need to do this.** If you just want to add emojis to the pack, you can follow the [basic setup section](#basic-setup). CI will automatically build the pack for you when you open the PR and check for errors.
 
 - Fork the [mutant-remix repository](https://github.com/mutant-remix/mutant-remix) to your own account
 - Clone your fork of the repository **recursively** to get the submodules
