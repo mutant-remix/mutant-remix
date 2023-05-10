@@ -37,7 +37,9 @@ This repository has no warranty and has only been tested with Arch Linux. If you
 If you are not running Arch Linux, you can use a [Docker](https://www.docker.com/) container to build Mutant Remix. This is the recommended way to build Mutant Remix on Windows (or other Linux distributions).
 
 ```bash
+cd mutant-remix
 docker run -it --rm -v ./:/mutant-remix archlinux:latest /bin/bash
+cd /mutant-remix
 ```
 
 Then, follow the [dependencies](#dependencies) instructions.
