@@ -20,7 +20,22 @@ Check the [coverage table](https://github.com/mutant-remix/coverage-report/blob/
 > In most cases, `feat: <something> #<issue number>` or `fix: <something> #<issue number>`.
 - Your contributions will be licensed under the [CC BY-NC-SA 4.0](https://github.com/mutant-remix/assets/blob/master/LICENSE) license and your name will be added to the [contributors list](./CONTRIBUTORS.md) (if you wish)
 
+## Issues
 Open an issue before working on anything. This way we can discuss the changes you want to make and make sure they fit with the project and that somebody else isn't working on the same thing as you. This is to make sure you don't waste your time working on something that won't be merged.
+
+### Workflow
+- Open an issue according to the [example below](#example-issue)
+> In the case of adding emojis, you should open an issue on the [mutant-remix/assets](https://github.com/mutant-remix/assets) repository
+- If your issue is accepted, you will get assigned to it
+- You may then start working on the issue
+
+### Example issue
+**Add tricolor flag emojis**
+
+The tricolor flag emojis are missing from the pack. I would like to add them.
+
+List of codepoints:
+- `1F3F4` `E0067` `E0062` `E0073` `E0063` `E0074` `E007F`
 
 ## Communities
 We encourage you to join our communities to discuss the changes you want to make, and to get help if you need it.
@@ -47,9 +62,9 @@ git clone https://github.com/YOUR-USERNAME/assets
 cd assets
 ```
 
-> Please don't open pull requests to `mutant-remix/mutant-remix` with changes to the `assets` submodule. Instead, open pull requests to `mutant-remix/assets`.
-
 You will then be able to add emojis to your fork (of `assets`) and open a pull request to have it merged into Mutant Remix.
+
+> Please don't open pull requests to `mutant-remix/mutant-remix` with changes to the `assets` submodule. Instead, open pull requests to `mutant-remix/assets`.
 
 ### Building the pack
 **You may not need to do this step.** CI will automatically build the pack for you when you open the PR and check for errors. This is only needed if you want to test your changes locally before opening a PR. Continue with the [adding content](#adding-content) section if you'd like to skip this step.
