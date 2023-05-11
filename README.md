@@ -81,7 +81,7 @@ cd /mutant-remix
 Then follow the [dependencies](#dependencies) section.
 
 #### Manual
-If you do not want to use an Arch Linux container, you can install the dependencies manually.
+If you do not want to use an Arch Linux container, you can install the dependencies manually. Package names may vary depending on your distribution and will only be provided for Arch Linux and Debian/Ubuntu.
 
 Arch Linux | Debian/Ubuntu
 --- | ---
@@ -97,6 +97,8 @@ Arch Linux | Debian/Ubuntu
 `oxipng` | `cargo install oxipng`
 
 > You may experience issues if you use `svgcleaner` and `resvg` from your distribution's repositories. It is recommended to use the `cargo` versions.
+
+Then follow the [dependencies](#dependencies) section, skipping the `pacman` step.
 
 ### Basic usage
 The first-time build is going to take 3-15 minutes (depending on your CPU). Subsequent builds will be several times faster, as only the changed files will be rebuilt.
