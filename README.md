@@ -32,7 +32,7 @@ git clone --recursive https://github.com/mutant-remix/mutant-remix
 > If you did not clone recursively, you can run `git submodule update --init --recursive` to fetch the submodules.
 
 ### Dependencies
-This repository has no warranty and has only been tested with Arch Linux. If you are using a different distribution (or Windows), check out the [Docker](#docker) section.
+This repository has no warranty and has only been tested with Arch Linux. If you are using a different distribution (or Windows), check out the [non-arch](#non-arch) section.
 
 You will need:
 - [Orxporter prerequisites](https://github.com/mutant-remix/orxporter#prerequisites)
@@ -40,32 +40,63 @@ You will need:
 - `wget`
 
 ```bash
+# Install base packages
 sudo pacman -Syu --needed \
-    base-devel wget \ # you likely have this installed already
+    wget \
     python python-pip \ # for running orxporter
     nodejs yarn \ # for running coverage-calculator
+    rustup \ # for installing resvg
     oxipng perl-image-exiftool svgcleaner libwebp # orxporter dependencies
 
-pip install -r ./orxporter/requirements.txt
+# You may experience issues if you use resvg from the AUR
+# It is recommended to use cargo
+rustup install stable
+cargo install resvg
 
+# Install orxporter and forc dependencies
+pip install -r ./orxporter/requirements.txt
+pip install -r ./forc/requirements.txt
+
+# Install coverage-calculator dependencies
 cd coverage-calculator
 yarn install
 
 cd ..
 ```
 
-### Docker
-**If you are not running Arch Linux**, you can use a [Docker](https://www.docker.com/) container to build Mutant Remix. This is the recommended way to build Mutant Remix on Windows (or other Linux distributions).
+### Non-arch
+**If you are not running Arch Linux** (Windows or another distribution), here are the alternatives:
 
-> If you are knowledgeable enough, you can also use WSL, Git Bash (on Windows) or find the equivalent packages for your distribution instead. This guide will not cover these methods, but you can install oxipng and svgcleaner from crates.io.
+#### Docker
+You can use Docker to run the build scripts in an Arch Linux container. This works on Windows and Linux.
 
 ```bash
 cd mutant-remix
-docker run -it --rm -v ./:/mutant-remix archlinux:latest /bin/bash
+docker run -it --rm -v ./:/mutant-remix docker.io/archlinux:latest /bin/bash
 cd /mutant-remix
 ```
 
+> You can use Podman instead of Docker. The command is the same, just `podman` instead of `docker`.
+
 Then follow the [dependencies](#dependencies) section.
+
+#### Manual
+If you do not want to use an Arch Linux container, you can install the dependencies manually.
+
+Arch Linux | Debian/Ubuntu
+--- | ---
+`wget` | `apt install wget`
+`libwebp` | `apt install webp`
+`perl-image-exiftool` | `apt install libimage-exiftool-perl`
+`libpng-dev` | `apt install libpng-dev`
+`python python-pip` | `apt install python3 python-pip`
+`nodejs` | [Node Version Manager](https://github.com/nvm-sh/nvm)
+`yarn` | `npm install -g yarn`
+`rustup` | [Rustup](https://rustup.rs/)
+`svgcleaner` | `cargo install svgcleaner`
+`oxipng` | `cargo install oxipng`
+
+> You may experience issues if you use `svgcleaner` and `resvg` from your distribution's repositories. It is recommended to use the `cargo` versions.
 
 ### Basic usage
 The first-time build is going to take 3-15 minutes (depending on your CPU). Subsequent builds will be several times faster, as only the changed files will be rebuilt.
