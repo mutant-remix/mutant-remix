@@ -35,7 +35,7 @@ jobs:
       - name: Install apt dependencies
         uses: Eeems-Org/apt-cache-action@v1
         with:
-          packages: libimage-exiftool-perl webp libpng-dev libaom-dev
+          packages: libimage-exiftool-perl webp libpng-dev
 
       - name: Install oxipng
         uses: baptiste0928/cargo-install@v2
