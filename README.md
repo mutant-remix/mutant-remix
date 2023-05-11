@@ -40,7 +40,7 @@ You will need:
 - `wget`
 
 ```bash
-sudo pacman -S --needed \
+sudo pacman -Syu --needed \
     base-devel wget \ # you likely have this installed already
     python python-pip \ # for running orxporter
     nodejs yarn \ # for running coverage-calculator
@@ -55,13 +55,17 @@ cd ..
 ```
 
 ### Docker
-If you are not running Arch Linux, you can use a [Docker](https://www.docker.com/) container to build Mutant Remix. This is the recommended way to build Mutant Remix on Windows (or other Linux distributions).
+**If you are not running Arch Linux**, you can use a [Docker](https://www.docker.com/) container to build Mutant Remix. This is the recommended way to build Mutant Remix on Windows (or other Linux distributions).
+
+> If you are knowledgeable enough, you can also use WSL, Git Bash (on Windows) or find the equivalent packages for your distribution instead. This guide will not cover these methods, but you can install oxipng and svgcleaner from crates.io.
 
 ```bash
 cd mutant-remix
 docker run -it --rm -v ./:/mutant-remix archlinux:latest /bin/bash
 cd /mutant-remix
 ```
+
+Then follow the [dependencies](#dependencies) section.
 
 ### Basic usage
 The first-time build is going to take 3-15 minutes (depending on your CPU). Subsequent builds will be several times faster, as only the changed files will be rebuilt.
