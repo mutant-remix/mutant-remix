@@ -1,0 +1,122 @@
+
+# just get all of the emoji files
+# file order isn't in folder order because everything is ordered in terms of importance.
+
+
+
+
+
+
+
+# REPEATING CODEPOINTS
+# ------------------------------------
+define zwj #200d
+define vs16 #fe0f
+
+
+
+# EXPRESSIONS
+# ------------------------------------
+include emoji/expressions/smilies.orx
+include emoji/expressions/expressions_other.orx
+include emoji/expressions/hands.orx
+include emoji/expressions/body_parts.orx
+include emoji/expressions/body.orx
+
+
+# PEOPLE AND ANIMALS
+# ------------------------------------
+include emoji/people_animals/creatures.orx
+include emoji/people_animals/aspects.orx
+
+
+# ACTIVITIES AND CLOTHING
+# ------------------------------------
+include emoji/activities_clothing/roles.orx
+include emoji/activities_clothing/clothing.orx
+include emoji/activities_clothing/performing_arts.orx
+include emoji/activities_clothing/sports.orx
+
+
+# GENDER, SEXUALITY AND RELATIONSHIPS
+# ------------------------------------
+include emoji/gsr/gsr.orx
+
+
+# FOOD, DRINK AND HERBS
+# ------------------------------------
+include emoji/food_drink_herbs/food.orx
+
+
+# NATURE AND EFFECTS
+# ------------------------------------
+include emoji/nature_effects/nature_effects.orx
+
+
+# TRAVEL AND PLACES
+# ------------------------------------
+include emoji/travel_places/cars.orx
+include emoji/travel_places/trains.orx
+include emoji/travel_places/air.orx
+include emoji/travel_places/locations.orx
+include emoji/travel_places/buildings.orx
+include emoji/travel_places/scenes.orx
+include emoji/travel_places/space.orx
+
+
+# OBJECTS
+# ------------------------------------
+include emoji/objects/tech.orx
+include emoji/objects/office_stationery.orx
+include emoji/objects/money.orx
+
+include emoji/objects/household.orx
+include emoji/objects/mechanisms.orx
+include emoji/objects/science_medicine.orx
+
+include emoji/objects/party.orx
+include emoji/objects/games.orx
+include emoji/objects/art.orx
+
+include emoji/objects/other.orx
+
+
+
+# EXTRA
+# ------------------------------------
+include emoji/extra/weapons.orx
+include emoji/extra/occult_magic.orx
+include emoji/extra/cyber.orx
+include emoji/extra/symbols.orx
+
+
+# SYMBOLS
+# ------------------------------------
+include emoji/symbols/symbols_hearts.orx
+include emoji/symbols/symbols_custom.orx
+
+include emoji/symbols/symbols_flags.orx
+include emoji/symbols/symbols_signs.orx
+include emoji/symbols/symbols_restrictive.orx
+include emoji/symbols/symbols_misc.orx
+include emoji/symbols/symbols_zodiac.orx
+
+include emoji/symbols/symbols_jp.orx
+include emoji/symbols/symbols_jp_en.orx
+
+include emoji/symbols/symbols_arrows.orx
+include emoji/symbols/symbols_textual.orx
+
+include emoji/symbols/symbols_sound.orx
+
+include emoji/symbols/symbols_phone_characters.orx
+include emoji/symbols/symbols_media_playback.orx
+
+include emoji/symbols/symbols_shapes.orx
+include emoji/symbols/symbols_clocks.orx
+
+
+
+# UTILS
+# ------------------------------------
+include emoji/utils/utils.orx

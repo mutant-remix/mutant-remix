@@ -1,0 +1,4 @@
+
+
+emoji 	short = capsule						src = objects/science_medicine/capsule.svg					code = #1F48A    cat = objects   desc = capsule
+emoji 	short = microscope					src = objects/science_medicine/microscope.svg				code = #1F52C    cat = objects   desc = microscope

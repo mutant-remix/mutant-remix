@@ -1,0 +1,38 @@
+
+palette fe1
+	shade_1 = #807167
+	shade_2 = #5B4E45
+	shade_3 = #3D3026
+	paw_pad = #D58B89
+
+	nail_polish = #25AC91
+
+	shirt_shade_1 = $shirt_shade_1
+	shirt_shade_2 = $shirt_shade_2
+	shirt_shade_3 = $shirt_shade_3
+
+
+palette ft1
+	shade_1 = #CEB07D
+	shade_2 = #A38658
+	shade_3 = #4F4027
+	paw_pad = #816E4E
+
+	nail_polish = #9C45C7
+
+	shirt_shade_1 = $shirt_shade_1
+	shirt_shade_2 = $shirt_shade_2
+	shirt_shade_3 = $shirt_shade_3
+
+
+palette fk1
+    shade_1 = #E5E5E5
+    shade_2 = #B3B3B3
+    shade_3 = #585858
+    paw_pad = #E49393
+
+	nail_polish = #EE5DC0
+
+    shirt_shade_1 = $shirt_shade_1
+    shirt_shade_2 = $shirt_shade_2
+    shirt_shade_3 = $shirt_shade_3
