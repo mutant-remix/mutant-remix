@@ -24,18 +24,16 @@ Check the [coverage table](https://github.com/mutant-remix/coverage-report/blob/
 Open an issue before working on anything. This way we can discuss the changes you want to make and make sure they fit with the project and that somebody else isn't working on the same thing as you. This is to make sure you don't waste your time working on something that won't be merged.
 
 ### Workflow
-- Open an issue according to the [example below](#example-issue)
-> In the case of adding emojis, you should open an issue on the [mutant-remix/assets](https://github.com/mutant-remix/assets) repository
+- Open an issue on the [mutant-remix repository](https://github.com/mutant-remix/mutant-remix)
+
+For example:
+> **Add tricolor flag emojis**
+>
+> The tricolor flag emojis are missing from the pack. I would like to add them.
+>
+> List of codepoints: `1F3F4` `E0067` `E0062` `E0073` `E0063` `E0074` `E007F`
 - If your issue is accepted, you will get assigned to it
 - You may then start working on the issue
-
-### Example issue
-**Add tricolor flag emojis**
-
-The tricolor flag emojis are missing from the pack. I would like to add them.
-
-List of codepoints:
-- `1F3F4` `E0067` `E0062` `E0073` `E0063` `E0074` `E007F`
 
 ## Communities
 We encourage you to join our communities to discuss the changes you want to make, and to get help if you need it.
@@ -47,24 +45,15 @@ We encourage you to join our communities to discuss the changes you want to make
 This guide assumes general familiarity with git and the command line. If you are not familiar with these, you should [join the communities](#communities) listed above and ask for help.
 
 ### Cloning the repository
-- Fork the [assets repository](https://github.com/mutant-remix/assets) to your own account
+- Fork the [mutant-remix repository](https://github.com/mutant-remix/mutant-remix) to your own account
 
-- Clone the `mutant-remix` repository **recursively** to get the submodules
+- Clone your fork of the `mutant-remix` repository **recursively** to get the submodules
 ```bash
-git clone --recursive https://github.com/mutant-remix/mutant-remix
+git clone --recursive https://github.com/YOUR-USERNAME/mutant-remix
 cd mutant-remix
 ```
 
-- Clone your fork of the `assets` repository, replacing the existing submodule. This is needed because you most likely don't have write access to the original repository.
-```bash
-rm -rf assets
-git clone https://github.com/YOUR-USERNAME/assets
-cd assets
-```
-
-You will then be able to add emojis to your fork (of `assets`) and open a pull request to have it merged into Mutant Remix.
-
-> Please don't open pull requests to `mutant-remix/mutant-remix` with changes to the `assets` submodule. Instead, open pull requests to `mutant-remix/assets`.
+You will then be able to add emojis to your fork and open a pull request to have it merged into Mutant Remix.
 
 ### Building the pack
 **You may not need to do this step.** CI will automatically build the pack for you when you open the PR and check for errors. This is only needed if you want to test your changes locally before opening a PR. Continue with the [adding content](#adding-content) section if you'd like to skip this step.
