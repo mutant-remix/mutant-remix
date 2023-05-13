@@ -62,7 +62,7 @@ jobs:
           echo "Released $(TZ=GMT date +%Y.%m.%d) (GMT)" >> assets/texts/license.txt
           echo "https://mutant.revolt.chat/" >> assets/texts/license.txt
           echo >> assets/texts/license.txt
-          echo " --------------------- " >> assets/texts/license.txt
+          echo "---------------------------------------" >> assets/texts/license.txt
           echo >> assets/texts/license.txt
           cat LICENSE >> assets/texts/license.txt
 
