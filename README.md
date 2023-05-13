@@ -92,12 +92,11 @@ Arch Linux package | Debian/Ubuntu | Mac OS
 `perl-image-exiftool` | `apt install libimage-exiftool-perl` | `brew install exiftool`
 `libpng-dev` | `apt install libpng-dev` | `brew install libpng`
 `python python-pip` | `apt install python3 python-pip` | `brew install python`
-`nodejs` | [Node Version Manager](https://github.com/nvm-sh/nvm), `nvm install node` | `brew install node`
+`nodejs` | [Node Version Manager](https://github.com/nvm-sh/nvm) + `nvm install node` | `brew install node`
 `yarn` | `npm install -g yarn` | `brew install yarn`
-`rustup` | [Rustup](https://rustup.rs/), `rustup install stable` | `brew install rustup`, `rustup install stable`
+`rustup` | [Rustup](https://rustup.rs/) | `brew install rustup`
 `svgcleaner` | `cargo install svgcleaner` | `cargo install svgcleaner`
 `oxipng` | `cargo install oxipng` | `cargo install oxipng`
-`resvg` | `cargo install resvg` | `cargo install resvg`
 
 > You may experience issues if you use `svgcleaner` and `resvg` from your distribution's repositories. It is recommended to use the `cargo` versions.
 
