@@ -137,6 +137,7 @@ emoji 	short = confounded 							src = $(smiley_path)/unhappy/confounded.svg				
 emoji 	short = smile_w_tear 									src = $(smiley_path)/unhappy/smile_w_tear.svg			code = #1f972    cat = expressions   desc = smiling face with tear
 emoji 	short = crying 									src = $(smiley_path)/unhappy/crying.svg							code = #1F622    cat = expressions   desc = crying
 emoji 	short = loud_cry 								src = $(smiley_path)/unhappy/loud_cry.svg						code = #1F62D    cat = expressions   desc = loud_cry
+emoji 	short = holding_back_tears 								src = $(smiley_path)/unhappy/holding_back_tears.svg						code = #1F979    cat = expressions   desc = holding_back_tears
 
 
 
