@@ -66,6 +66,9 @@ For example:
 > Codepoints: `1F3F4` `E0067` `E0062` `E0073` `E0063` `E0074` `E007F`
 - If you are not sure that your issue is valid, you can wait for feedback from the maintainers before working on it to make sure you don't waste your time.
 
+### Attribution
+If you wish to be included in the [contributors list](./CONTRIBUTORS.md), you can add your name to it in your PR. Same PR is fine, but use separate commits for the actual content and the attribution.
+
 ### Structure
 Emojis consist of two parts:
 - The SVG file located in `./assets/svg/<category>/<subcategory>/<name>.svg`
@@ -73,6 +76,8 @@ Emojis consist of two parts:
 
 ### Design software
 You can use any software you want to create the SVG files, but we recommend using [Inkscape](https://inkscape.org/) as it is free and open source. If you are more comfortable with other software, you can use that instead.
+
+Make sure that the SVG files are exported with settings optimized for file size (i.e. no unnecessary metadata).
 
 ### Metadata
 Refer to existing metadata for examples of how to write metadata and check out the [metadata guide for orxporter](https://github.com/mutant-remix/orxporter/blob/master/docs/kiilas/manifest.md) for syntax information.
