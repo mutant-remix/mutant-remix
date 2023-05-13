@@ -20,21 +20,6 @@ Check the [coverage table](https://github.com/mutant-remix/coverage-report/blob/
 > In most cases, `feat: <something> #<issue number>` or `fix: <something> #<issue number>`.
 - Your contributions will be licensed under the [CC BY-NC-SA 4.0](https://github.com/mutant-remix/assets/blob/master/LICENSE) license and your name will be added to the [contributors list](./CONTRIBUTORS.md) (if you wish)
 
-## Issues
-Open an issue before working on anything. This way we can discuss the changes you want to make and make sure they fit with the project and that somebody else isn't working on the same thing as you. This is to make sure you don't waste your time working on something that won't be merged.
-
-### Workflow
-- Open an issue on the [mutant-remix repository](https://github.com/mutant-remix/mutant-remix)
-
-For example:
-> **Add tricolor flag emojis**
->
-> The tricolor flag emojis are missing from the pack. I would like to add them.
->
-> List of codepoints: `1F3F4` `E0067` `E0062` `E0073` `E0063` `E0074` `E007F`
-- If your issue is accepted, you will get assigned to it
-- You may then start working on the issue
-
 ## Communities
 We encourage you to join our communities to discuss the changes you want to make, and to get help if you need it.
 
@@ -61,10 +46,25 @@ You will then be able to add emojis to your fork and open a pull request to have
 - Install the required dependencies as described in [README/prerequisites](./README.md#dependencies)
 - Try building the project to make sure everything is working as described in [README/basic usage](./README.md#basic-usage)
 
+## Issues
+Open an issue before working on anything. This way we can discuss the changes you want to make and make sure they fit with the project and that somebody else isn't working on the same thing as you. This is to make sure you don't waste your time working on something that won't be merged.
+
 ## Adding content
 Check out the [general notes](#general-notes) section before adding content.
 
 The [coverage table](https://github.com/mutant-remix/coverage-report/blob/master/coverage.md) contains a list of all emojis that are in the scope of this pack with their corresponding unicode codepoints and **links to relevant emojipedia searches**.
+
+### Workflow
+- Check the [issues](https://github.com/mutant-remix/mutant-remix/issues) to see if that emoji is already being worked on. If an issue is tagged with "help wanted", it means that it is open for anyone to work on. Comment on the issue to let everyone know that you are working on it.
+- Open an issue on the [mutant-remix repository](https://github.com/mutant-remix/mutant-remix)
+
+For example:
+> **Add tricolor flag emojis**
+>
+> The tricolor flag emojis are missing from the pack. I would like to add them.
+>
+> Codepoints: `1F3F4` `E0067` `E0062` `E0073` `E0063` `E0074` `E007F`
+- If you are not sure that your issue is valid, you can wait for feedback from the maintainers before working on it to make sure you don't waste your time.
 
 ### Structure
 Emojis consist of two parts:
