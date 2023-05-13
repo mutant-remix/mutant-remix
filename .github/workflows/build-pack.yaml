@@ -52,6 +52,20 @@ jobs:
         with:
           crate: resvg
 
+      # Generate license.txt to be embedded in the pack
+      - name: Generate license.txt
+        run: |
+          mkdir assets/texts
+
+          echo "Mutant Remix emoji" > assets/texts/license.txt
+          echo "Version ${{ github.run_number }}" >> assets/texts/license.txt
+          echo "Released $(TZ=GMT date +%Y.%m.%d) (GMT)" >> assets/texts/license.txt
+          echo "https://mutant.revolt.chat/" >> assets/texts/license.txt
+          echo >> assets/texts/license.txt
+          echo " --------------------- " >> assets/texts/license.txt
+          echo >> assets/texts/license.txt
+          cat LICENSE >> assets/texts/license.txt
+
       # Build pack
       - name: Restore build cache
         uses: actions/cache@v3

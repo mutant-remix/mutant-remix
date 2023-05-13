@@ -125,4 +125,4 @@ sh out_web_content.sh
 ```
 
 ## License
-Everything directly in this repository is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/). Refer to separate licenses in the `assets`, `coverage-calculator`, `forc` and `orxporter` submodules for their respective licenses.
+Everything directly in this repository is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/). Refer to separate licenses in the `coverage-calculator`, `forc` and `orxporter` submodules for their respective licenses.
