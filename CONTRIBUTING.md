@@ -91,5 +91,13 @@ The name of the emoji should (usually) be the same as in the coverage table, but
 ### Non-unicode emojis
 If you want to add an emoji that is not in the coverage table, you may do so. However, it will not be included in the codepoint version of the pack, but only in the shortcode version. Don't make up codepoints for emojis that don't have them, but you can make up shortcodes for them.
 
+### Codepoints
+For repeating codepoints, you should use a variable, such as `$zwj` and `$vs16`. You do not need to define these variables yourself.
+
+```
+$zwj = #200d
+$vs16 = #fe0f
+```
+
 ### Color variations
 If some emojis are just color variations of each other (for example, skin tones, some flags, colored shapes), you should consider making a template emoji with no color of it's own. Then, you may use colormaps in the metadata to color it during the build process. This will make sure that the emojis are consistent with each other and that they are all updated when one of them is changed, as well as keep the structure of the project more tidy.
