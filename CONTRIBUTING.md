@@ -54,6 +54,9 @@ Check out the [general notes](#general-notes) section before adding content.
 
 The [coverage table](https://github.com/mutant-remix/coverage-report/blob/master/coverage.md) contains a list of all emojis that are in the scope of this pack with their corresponding unicode codepoints and **links to relevant emojipedia searches**.
 
+### Avoiding merge conflicts
+It is recommended to pull the latest changes before making any changes to avoid merge conflicts. If you are working on a fork, sync it with the upstream repository before making any changes.
+
 ### Workflow
 - Check the [issues](https://github.com/mutant-remix/mutant-remix/issues) to see if that emoji is already being worked on. If an issue is tagged with "help wanted", it means that it is open for anyone to work on. Comment on the issue to let everyone know that you are working on it.
 - Open an issue on the [mutant-remix repository](https://github.com/mutant-remix/mutant-remix)
