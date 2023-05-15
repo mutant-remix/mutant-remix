@@ -67,8 +67,14 @@ cd ..
 ### Non-arch
 **If you are not running Arch Linux** (Windows or another distribution), here are the alternatives:
 
+#### Windows Subsystem for Linux (WSL)
+You can use WSL to run the build scripts in an Arch Linux container. This works on **Windows 10** and **Windows 11**.
+
+- [Install WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+- If you choose to use Ubuntu, install the dependencies for Debian/Ubuntu as listed in the [manual](#manual) section
+
 #### Docker
-You can use Docker to run the build scripts in an Arch Linux container. This works on Windows and Linux. For Mac OS, check out the [manual](#manual) section.
+You can use Docker to run the build scripts in an Arch Linux container. This works on **Windows** and **Linux**.
 
 ```bash
 cd mutant-remix
@@ -81,7 +87,7 @@ cd /mutant-remix
 Then follow the [dependencies](#dependencies) section.
 
 #### Manual
-If you do not want to use an Arch Linux container, you can install the dependencies manually.
+If you do not want to use an Arch Linux container, or are running **Mac OS** you can install the dependencies manually.
 
 Package names may vary depending on your distribution and alternatives will only be provided for Debian/Ubuntu and Mac OS.
 
