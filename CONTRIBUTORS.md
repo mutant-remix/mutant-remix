@@ -12,3 +12,4 @@ Mutant Remix is a fork of [Mutant Standard](https://mutant.tech/) by Dzuk with s
 ## Contributors
 - nizune - founder of Mutant Remix
 - aisu
+- Valence ([vale](https://github.com/DeclanChidlow))
