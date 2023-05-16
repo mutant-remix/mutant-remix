@@ -129,7 +129,7 @@ emoji 	short = swearing 									src = $(smiley_path)/sick_angry/swearing.svg			
 emoji 	short = sweat 							      src = $(smiley_path)/unhappy/sweat.svg					    code = #1F613    cat = expressions   desc = sweat
 emoji 	short = unsure 									src = $(smiley_path)/unhappy/unsure.svg							code = #1F615    cat = expressions   desc = unsure
 emoji 	short = slight_frown 						src = $(smiley_path)/unhappy/slight_frown.svg				code = #1F641    cat = expressions   desc = slight_frown
-emoji 	short = big_frown 										src = $(smiley_path)/unhappy/big_frown.svg							code = #2639 $vs16     cat = expressions   desc = big_frown
+emoji 	short = frown 										src = $(smiley_path)/unhappy/frown.svg							code = #2639     cat = expressions   desc = frown
 emoji 	short = unhappy 									src = $(smiley_path)/unhappy/unhappy.svg						code = #1F61F    cat = expressions   desc = unhappy
 emoji 	short = disappointed 						src = $(smiley_path)/unhappy/disappointed.svg				code = #1F61E    cat = expressions   desc = disappointed
 emoji 	short = persevering 							src = $(smiley_path)/unhappy/persevering.svg				code = #1F623    cat = expressions   desc = persevering
