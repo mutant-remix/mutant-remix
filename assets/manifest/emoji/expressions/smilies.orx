@@ -30,6 +30,7 @@ emoji 	short = xd_tongue 							src = $(smiley_path)/happy_fun/xd_tongue.svg				
 emoji 	short = yum 										src = $(smiley_path)/happy_fun/yum.svg										code = #1F60B    cat = expressions   desc = yum
 emoji 	short = money_face 						src = $(smiley_path)/happy_fun/money_face.svg							code = #1F911    cat = expressions   desc = money face smiley
 emoji 	short = party_face 						src = $(smiley_path)/happy_fun/party_face.svg							code = #1F973    cat = expressions   desc = smiley blowing a party blower while wearing a party hat
+emoji 	short = chuckling 						src = $(smiley_path)/happy_fun/chuckling.svg							code = #1F92D    cat = expressions   desc = smiley chuckling with hand over mouth
 
 
 # embarrassed-infatuated
@@ -63,7 +64,7 @@ emoji 	short = unamused 										src = $(smiley_path)/sarcasm_unamused/unamused
 emoji 	short = smirk 												src = $(smiley_path)/sarcasm_unamused/smirk.svg												code = #1F60F    cat = expressions   desc = smirking smiley
 emoji 	short = thinking 										src = $(smiley_path)/sarcasm_unamused/thinking.svg											code = #1F914    cat = expressions   desc = thinking smiley
 emoji 	short = shush 												src = $(smiley_path)/sarcasm_unamused/shush.svg												code = #1F92B    cat = expressions   desc = smiley with small open mouth with an index finger pointing upwards next to it, indicating quietness
-emoji 	short = hand_over_mouth 							src = $(smiley_path)/sarcasm_unamused/hand_over_mouth.svg							code = #1F92D    cat = expressions   desc = smiley with a hand over its mouth
+emoji 	short = hand_over_mouth 							src = $(smiley_path)/sarcasm_unamused/hand_over_mouth.svg							code = #1FAE2    cat = expressions   desc = smiley with a hand over its mouth
 emoji 	short = yawn 											src = $(smiley_path)/sarcasm_unamused/yawn.svg											code = #1F971    cat = expressions   desc = yawning smiley
 emoji 	short = monocle 											src = $(smiley_path)/sarcasm_unamused/monocle.svg											code = #1F9D0    cat = expressions   desc = smiley with a monocle
 emoji 	short = raised_eyebrow 							src = $(smiley_path)/sarcasm_unamused/raised_eyebrow.svg								code = #1F928    cat = expressions   desc = smiley raising its eyebrow
