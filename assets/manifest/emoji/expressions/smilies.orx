@@ -30,6 +30,7 @@ emoji 	short = xd_tongue 							src = $(smiley_path)/happy_fun/xd_tongue.svg				
 emoji 	short = yum 										src = $(smiley_path)/happy_fun/yum.svg										code = #1F60B    cat = expressions   desc = yum
 emoji 	short = money_face 						src = $(smiley_path)/happy_fun/money_face.svg							code = #1F911    cat = expressions   desc = money face smiley
 emoji 	short = party_face 						src = $(smiley_path)/happy_fun/party_face.svg							code = #1F973    cat = expressions   desc = smiley blowing a party blower while wearing a party hat
+emoji 	short = chuckling 						src = $(smiley_path)/happy_fun/chuckling.svg							code = #1F92D    cat = expressions   desc = smiley chuckling with hand over mouth
 
 
 # embarrassed-infatuated
