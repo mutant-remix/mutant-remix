@@ -50,7 +50,6 @@ emoji 	short = quoiromantic_flag				src = $(gsd_path)/flags/quoiromantic_flag.sv
 
 
 emoji 	short = lesbian_flag						src = $(gsd_path)/flags/lesbian_flag.svg						code = !undefined         cat = gsr    desc = lesbian flag
-emoji 	short = lipstick_lesbian_flag		    src = $(gsd_path)/flags/lipstick_lesbian_flag.svg				code = !undefined     cat = gsr    desc = lipstick lesbian flag
 emoji 	short = enbian_flag					    src = $(gsd_path)/flags/enbian_flag.svg						    code = !undefined     cat = gsr    desc = enbian flag
 emoji 	short = bear_flag						src = $(gsd_path)/flags/bear_flag.svg							code = !undefined         cat = gsr    desc = bear flag
 emoji 	short = leather_flag						src = $(gsd_path)/flags/leather_flag.svg						code = !undefined     cat = gsr    desc = leather flag
