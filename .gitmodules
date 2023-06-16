@@ -10,6 +10,6 @@
 	path = orxporter
 	url = https://github.com/mutant-remix/orxporter
 
-[submodule "builder"]
-	path = builder
-	url = https://github.com/mutant-remix/builder
+[submodule "mrxbuilder"]
+	path = mrxbuilder
+	url = https://github.com/mutant-remix/mrxbuilder
