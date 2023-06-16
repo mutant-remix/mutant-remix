@@ -17,8 +17,8 @@ If you would like to contribute to Mutant Remix, please read the [CONTRIBUTING g
 You can see the full list of contributors in [CONTRIBUTORS](./CONTRIBUTORS.md).
 
 ## Communities
-- On Discord https://discord.gg/SkM2XppTrR
 - On [Revolt](https://revolt.chat) https://rvlt.gg/kcTDntf1
+- Discord (mirror of the Revolt server) https://discord.gg/SkM2XppTrR
 
 ## Building
 > This guide assumes general familiarity with git and the command line. If you are not familiar with these, you should [join the communities](#communities) listed above and ask for help.

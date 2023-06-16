@@ -23,8 +23,8 @@ Check the [coverage table](https://github.com/mutant-remix/coverage-report/blob/
 ## Communities
 We encourage you to join our communities to discuss the changes you want to make, and to get help if you need it.
 
-- On Discord https://discord.gg/SkM2XppTrR
 - On [Revolt](https://revolt.chat) https://rvlt.gg/kcTDntf1
+- Discord (mirror of the Revolt server) https://discord.gg/SkM2XppTrR
 
 ## Setting up the workspace
 This guide assumes general familiarity with git and the command line. If you are not familiar with these, you should [join the communities](#communities) listed above and ask for help.
@@ -58,8 +58,8 @@ The [coverage table](https://github.com/mutant-remix/coverage-report/blob/master
 It is recommended to pull the latest changes before making any changes to avoid merge conflicts. If you are working on a fork, sync it with the upstream repository before making any changes.
 
 ### Workflow
-- Check the [issues](https://github.com/mutant-remix/mutant-remix/issues) to see if that emoji is already being worked on. If an issue is tagged with "help wanted", it means that it is open for anyone to work on. Comment on the issue to let everyone know that you are working on it.
-- Open an issue on the [mutant-remix repository](https://github.com/mutant-remix/mutant-remix)
+- Check the [issues](https://github.com/mutant-remix/mutant-remix/issues) to see if that emoji is already being worked on. If an issue doesn't have anyone assigned to it, it means that it is open for anyone to work on. Comment on the issue to let everyone know that you are working on it.
+- Open your own issue on the [mutant-remix repository](https://github.com/mutant-remix/mutant-remix) if you are working on something new.
 
 For example:
 > **Add tricolor flag emojis**
@@ -77,13 +77,21 @@ Emojis consist of two parts:
 - The SVG file located in `./assets/svg/<category>/<subcategory>/<name>.svg`
 - The metadata located in `./assets/manifest/emoji/<category>/<subcategory>.orx`
 
+### SVG format
+- 32x32 of size (in svg units)
+- Transparent background
+
 ### Design software
 You can use any software you want to create the SVG files, but we recommend using [Inkscape](https://inkscape.org/) as it is free and open source. If you are more comfortable with other software, you can use that instead.
 
-Make sure that the SVG files are exported with settings optimized for file size (i.e. no unnecessary metadata).
+- Export in the `Optimized SVG` format
+- Check the `Convert CSS attributes to XML attributes` option
+- Check the `Remove metadata` option
 
 ### Metadata
 Refer to existing metadata for examples of how to write metadata and check out the [metadata guide for orxporter](https://github.com/mutant-remix/orxporter/blob/master/docs/kiilas/manifest.md) for syntax information.
+
+> We are working on a replacement for orxporter, the manifest format will be completely different and written in TOML.
 
 ### Naming
 The name of the emoji should (usually) be the same as in the coverage table, but with underscores instead of spaces. For example, `:grinning_face:` would be `grinning_face.svg`.
@@ -100,4 +108,6 @@ $vs16 = #fe0f
 ```
 
 ### Color variations
-If some emojis are just color variations of each other (for example, skin tones, some flags, colored shapes), you should consider making a template emoji with no color of it's own. Then, you may use colormaps in the metadata to color it during the build process. This will make sure that the emojis are consistent with each other and that they are all updated when one of them is changed, as well as keep the structure of the project more tidy.
+If some emojis are just color variations of each other (for example, skin tones, some flags, colored shapes), you should consider making a template emoji colored in shades of magenta. Then, you may use colormaps in the metadata to color it during the build process.
+
+This will make sure that the emojis are consistent with each other and that they are all updated when one of them is changed, as well as keep the structure of the project more tidy.
