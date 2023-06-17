@@ -6,7 +6,7 @@ Mutant Remix is a fork of [Mutant Standard](https://mutant.tech/) by Dzuk with s
 
 ## Maintainers
 - Wait What ([wait-what](https://github.com/wait-what)) - project lead
-- Cara ([user51112](https://github.com/user51112))
+- Cara ([CaraAra](https://github.com/CaraAra))
 - Paul Makles ([insertish](https://github.com/insertish)) - project lead of Revolt, which Mutant Remix is part of
 - temptrash ([trashtemp](https://github.com/trashtemp)) - founder of Mutant Remix
 
