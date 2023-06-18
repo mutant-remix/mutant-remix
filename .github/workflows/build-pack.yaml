@@ -30,7 +30,6 @@ jobs:
       - name: Install python dependencies
         run: |
           pip install -r orxporter/requirements.txt
-          pip install -r forc/requirements.txt
 
       - name: Install apt dependencies
         uses: Eeems-Org/apt-cache-action@v1
