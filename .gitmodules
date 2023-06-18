@@ -2,14 +2,6 @@
 	path = coverage-calculator
 	url = https://github.com/mutant-remix/coverage-calculator
 
-[submodule "forc"]
-	path = forc
-	url = https://github.com/mutant-remix/forc
-
 [submodule "orxporter"]
 	path = orxporter
 	url = https://github.com/mutant-remix/orxporter
-
-[submodule "mrxbuilder"]
-	path = mrxbuilder
-	url = https://github.com/mutant-remix/mrxbuilder
