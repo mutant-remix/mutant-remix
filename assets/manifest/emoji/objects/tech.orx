@@ -41,7 +41,7 @@ emoji 	short = projector						src = objects/tech/projector.svg					code = #1F4FD
 
 emoji 	short = video_game									src = objects/tech/video_game.svg								code =	#1F3AE  cat = objects   desc = video game
 emoji 	short = arcade_stick							src = objects/tech/arcade_stick.svg						code = !undefined    cat = objects   desc = arcade stick
-emoji 	short = joystick									src = objects/tech/joystick.svg								code = #1F579 vs16        cat = objects   desc = joystick
+emoji 	short = joystick									src = objects/tech/joystick.svg								code = #1F579 $vs16        cat = objects   desc = joystick
 
 emoji 	short = vr_headset								src = objects/tech/vr_headset.svg							code = !undefined    cat = objects   desc = VR headset
 
