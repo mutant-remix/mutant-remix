@@ -4,7 +4,7 @@ emoji 	short = awoo									src = symbols/custom/awoo.svg						code = #101698   
 emoji 	short = dont_awoo							src = symbols/custom/dont_awoo.svg					code = #101699    cat = symbols   desc = 'don't awoo' sign, showing a wolf howling with a prohibited line over it
 
 emoji 	short = battery_empty						src = symbols/custom/battery_empty.svg				code = !undefined    cat = symbols   desc = empty battery symbol
-emoji 	short = battery_low							src = symbols/custom/battery_low.svg				code = !undefined    cat = symbols   desc = low battery symbol
+emoji 	short = battery_low							src = symbols/custom/battery_low.svg				code = #1FAAB    cat = symbols   desc = low battery symbol
 emoji 	short = battery_medium						src = symbols/custom/battery_medium.svg				code = !undefined    cat = symbols   desc = medium battery symbol
 emoji 	short = battery_full							src = symbols/custom/battery_full.svg				code = !undefined    cat = symbols   desc = full battery symbol
 
