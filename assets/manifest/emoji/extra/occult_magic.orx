@@ -2,7 +2,7 @@
 
 
 # magic
-emoji 	short = magic_wand								src = extra/occult_magic/magic/magic_wand.svg								code = !undefined    cat = extra  desc = magic wand
+emoji 	short = wand								src = extra/occult_magic/magic/wand.svg								code = #1FA84    cat = extra  desc = wand
 
 # items
 emoji 	short = red_potion									src = extra/occult_magic/items/red_potion.svg								code = !undefined    cat = extra   desc = red potion

@@ -2,7 +2,7 @@
 
 emoji   short = plus                         src = symbols/textual/plus.svg                           code = #2795             cat = symbols     desc = plus symbol
 emoji   short = minus                        src = symbols/textual/minus.svg                          code = #2796             cat = symbols     desc = minus symbol
-emoji   short = multiply                     src = symbols/textual/multiply.svg                       code = #2716             cat = symbols     desc = multiply symbol
+emoji   short = multiplication_x                     src = symbols/textual/multiplication_x.svg                       code = #2716 $vs16             cat = symbols     desc = multiplication x symbol
 emoji   short = divide                       src = symbols/textual/divide.svg                         code = #2797             cat = symbols     desc = divide symbol
 
 emoji   short = tilde                        src = symbols/textual/tilde.svg                         code = #007E $vs16        cat = symbols     desc = tilde symbol

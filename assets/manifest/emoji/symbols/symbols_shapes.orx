@@ -6,8 +6,8 @@ emoji 	short = large_white_square							src = symbols/shapes/large_white_square.
 emoji 	short = medium_black_square						src = symbols/shapes/medium_black_square.svg						code = #25FC $vs16    cat = symbols   desc = medium black square
 emoji 	short = medium_white_square						src = symbols/shapes/medium_white_square.svg						code = #25FB $vs16    cat = symbols   desc = medium black square
 
-emoji 	short = medium_small_black_square			src = symbols/shapes/medium_small_black_square.svg			code = #25FE $vs16    cat = symbols   desc =  medium-small black square
-emoji 	short = medium_small_white_square			src = symbols/shapes/medium_small_white_square.svg			code = #25FD $vs16    cat = symbols   desc = medium-small black square
+emoji 	short = black_square_medium_small			src = symbols/shapes/black_square_medium_small.svg			code = #25FE    cat = symbols   desc =  medium-small black square
+emoji 	short = white_square_medium_small			src = symbols/shapes/white_square_medium_small.svg			code = #25FD    cat = symbols   desc = medium-small white square
 
 emoji 	short = small_black_square							src = symbols/shapes/small_black_square.svg							code = #25AA $vs16    cat = symbols   desc = small black square
 emoji 	short = small_white_square							src = symbols/shapes/small_white_square.svg							code = #25AB $vs16    cat = symbols   desc = small white square

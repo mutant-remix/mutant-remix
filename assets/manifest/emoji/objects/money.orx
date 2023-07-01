@@ -5,5 +5,5 @@ emoji 	short = yellow_money						src = objects/money/yellow_money.svg				code = 
 emoji 	short = pink_money							src = objects/money/pink_money.svg					code = #1F4B6    cat = objects   desc = pink currency notes
 emoji 	short = purple_money						src = objects/money/purple_money.svg				code = #1F4B7    cat = objects   desc = purple currency notes
 
-emoji 	short = moneybag								src = objects/money/moneybag.svg						code = #1F4B0 $vs16    cat = objects   desc = money bag
+emoji 	short = money_bag								src = objects/money/money_bag.svg						code = #1F4B0    cat = objects   desc = money bag
 emoji 	short = credit_card						src = objects/money/credit_card.svg					code = #1F4B3 $vs16    cat = objects   desc = credit card

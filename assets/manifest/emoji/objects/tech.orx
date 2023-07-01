@@ -12,7 +12,7 @@ emoji 	short = watch										src = objects/tech/watch.svg									code = #231A 
 
 # computer devices
 
-emoji 	short = laptop						      src = objects/tech/laptop.svg						             code = #1F4BB $vs16    cat = objects   desc = laptop
+emoji 	short = laptop_computer						      src = objects/tech/laptop_computer.svg						             code = #1F4BB    cat = objects   desc = laptop computer
 emoji 	short = computer						    src = objects/tech/computer.svg						           code = #1F5A5 $vs16    cat = objects   desc = computer
 emoji 	short = computer_mouse				  src = objects/tech/computer_mouse.svg						     code = #1F5B1 $vs16    cat = objects   desc = computer mouse
 emoji 	short = trackball						  src = objects/tech/trackball.svg					           code = #1F5B2 $vs16    cat = objects   desc = trackball
@@ -27,21 +27,21 @@ emoji 	short = printer						    src = objects/tech/printer.svg					     code = #
 emoji 	short = fax_machine						src = objects/tech/fax_machine.svg					 code = #1F4E0          cat = objects   desc = fax machine
 emoji 	short = landline_phone				  src = objects/tech/landline_phone.svg				 code = #260E $vs16     cat = objects   desc = landline phone
 emoji 	short = phone_receiver					src = objects/tech/phone_receiver.svg				 code = #1F4DE          cat = objects   desc = landline phone receiver
-emoji 	short = pager								  src = objects/tech/pager.svg							   code = #1F4DF $vs16          cat = objects   desc = pager
+emoji 	short = pager								  src = objects/tech/pager.svg							   code = #1F4DF          cat = objects   desc = pager
 
 
 
 
 # audiovisual experience
 
-emoji 	short = tv												src = objects/tech/tv.svg											code = #1F4FA $vs16    cat = objects   desc = TV
-emoji 	short = radio									  src = objects/tech/radio.svg								  code = #1F4FB $vs16    cat = objects   desc = radio
+emoji 	short = television												src = objects/tech/television.svg											code = #1F4FA    cat = objects   desc = television
+emoji 	short = radio									  src = objects/tech/radio.svg								  code = #1F4FB    cat = objects   desc = radio
 emoji 	short = speaker									src = objects/tech/speaker.svg								code = !undefined      cat = objects   desc = speaker
 emoji 	short = projector						src = objects/tech/projector.svg					code = #1F4FD $vs16    cat = objects   desc = projector
 
-emoji 	short = gamepad									src = objects/tech/gamepad.svg								code =	#1F3AE $vs16  cat = objects   desc = gamepad
+emoji 	short = video_game									src = objects/tech/video_game.svg								code =	#1F3AE  cat = objects   desc = video game
 emoji 	short = arcade_stick							src = objects/tech/arcade_stick.svg						code = !undefined    cat = objects   desc = arcade stick
-emoji 	short = joystick									src = objects/tech/joystick.svg								code = #1F579        cat = objects   desc = joystick
+emoji 	short = joystick									src = objects/tech/joystick.svg								code = #1F579 $vs16        cat = objects   desc = joystick
 
 emoji 	short = vr_headset								src = objects/tech/vr_headset.svg							code = !undefined    cat = objects   desc = VR headset
 
@@ -50,11 +50,11 @@ emoji 	short = vr_headset								src = objects/tech/vr_headset.svg							code = 
 
 # audiovisual creation
 
-emoji 	short = camera						      src = objects/tech/camera.svg					          code = #1F4F7 $vs16    cat = objects   desc = camera
+emoji 	short = camera						      src = objects/tech/camera.svg					          code = #1F4F7    cat = objects   desc = camera
 emoji 	short = camera_with_flash			src = objects/tech/camera_with_flash.svg		    code = #1F4F8          cat = objects   desc = camera with flash
 emoji 	short = camcorder				      src = objects/tech/camcorder.svg				        code = #1F4F9 $vs16    cat = objects   desc = camcorder
 emoji 	short = movie_camera					  src = objects/tech/movie_camera.svg				      code = #1F3A5          cat = objects   desc = movie camera
-emoji 	short = microphone						  src = objects/tech/microphone.svg						    code = #1F399 $vs16    cat = objects   desc = microphone
+emoji 	short = microphone						  src = objects/tech/microphone.svg						    code = #1F3A4    cat = objects   desc = microphone
 emoji 	short = stylus									src = objects/tech/stylus.svg									  code = !undefined      cat = objects   desc = stylus
 emoji 	short = level_slider						src = objects/tech/level_slider.svg					    code = #1F39A $vs16    cat = objects   desc = level slider
 emoji 	short = control_knobs					src = objects/tech/control_knobs.svg					  code = #1F39B $vs16    cat = objects   desc = control knobs
