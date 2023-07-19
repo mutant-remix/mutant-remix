@@ -1,7 +1,7 @@
 
 
 # swords
-emoji 	short = broadsword						src = extra/weapons/broadsword.svg							code = !undefined    cat = extra   desc = broadsword
+emoji 	short = dagger						src = extra/weapons/dagger.svg							code = #1F5E1 $vs16    cat = extra   desc = dagger
 emoji 	short = zweihander						src = extra/weapons/zweihander.svg							code = !undefined    cat = extra   desc = zweihander
 emoji 	short = rapier							src = extra/weapons/rapier.svg								code = !undefined    cat = extra   desc = rapier
 emoji 	short = sabre							src = extra/weapons/sabre.svg								code = !undefined    cat = extra   desc = sabre
